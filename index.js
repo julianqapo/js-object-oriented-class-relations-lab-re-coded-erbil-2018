@@ -70,11 +70,18 @@ this.name = name
 store.drivers.push(this)
 }
 trips(){
-  
+
 }
 passengers(){
-  
+
 }
 }
 
 
+class Passenger{
+  constructor(pass){
+    this.id= idP++
+    this.name = pass
+    store.passengers.push(this)
+  }
+}
