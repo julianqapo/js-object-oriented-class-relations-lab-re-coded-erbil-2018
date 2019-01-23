@@ -66,7 +66,10 @@ this.name = name
 store.drivers.push(this)
 }
 trips(){
-
+let z =  store.trips.filter(function(v){
+  return v.driverId == 0
+  })
+  return z
 }
 passengers(){
 
