@@ -85,11 +85,25 @@ class Passenger{
     store.passengers.push(this)
   }
   trips(){
-    
+
   }
   drivers(){
-    
+
   }
 }
 
 
+class Trip{
+  constructor(driver,pass){
+    this.id = idT++
+    this.driverId = driver.id
+    this.passengerId = pass.id
+  }
+  driver(){
+    
+  }
+
+  passenger(){
+    
+  }
+}
