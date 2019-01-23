@@ -59,10 +59,6 @@ let idT = 0
 let idD = 0
 let idP = 0
 
-
-
-
-
 class Driver{
 constructor(name){
 this.id = idD++
