@@ -84,4 +84,12 @@ class Passenger{
     this.name = pass
     store.passengers.push(this)
   }
+  trips(){
+    
+  }
+  drivers(){
+    
+  }
 }
+
+
