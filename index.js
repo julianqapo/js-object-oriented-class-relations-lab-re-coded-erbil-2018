@@ -68,7 +68,7 @@ store.drivers.push(this)
 trips(){
 return  store.trips.filter(v=>v.driverId == this.id)
 }
-function passengers(){
+passengers(){
 let me =[]
 let mz = []
 for (let i=0; i<store.trips.length;i++){
