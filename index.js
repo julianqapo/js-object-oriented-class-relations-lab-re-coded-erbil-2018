@@ -66,9 +66,7 @@ this.name = name
 store.drivers.push(this)
 }
 trips(){
-let z =  store.trips.filter(function(v){
-  return v.driverId == this.id
-  })
+let z =  store.trips.filter(v=>v.driverId == this.id)
   return z
 }
 passengers(){
