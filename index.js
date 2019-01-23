@@ -69,14 +69,4 @@ this.id = idD++
 this.name = name
 store.drivers.push(this)
 }
-driven(){
-let x = 0
-for (let i =0;i<store.trips.length;i++){
-if (store.trips[i].userId == this.id){
-x++
-}
-
-}
-return x
-}
 }
