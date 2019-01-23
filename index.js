@@ -54,7 +54,7 @@ class Trip{
 
 
 
-let store = {drivers:[],passengers: []}
+let store = {drivers:[],passengers: [], trips : []}
 let idT = 0
 let idD = 0
 let idP = 0
@@ -64,12 +64,9 @@ let idP = 0
 
 
 class Driver{
-constructor(name, passenger){
+constructor(name){
 this.id = idD++
 this.name = name
-if (passenger) {
-    this.userId = passenger.id;
-}
 store.drivers.push(this)
 }
 driven(){
