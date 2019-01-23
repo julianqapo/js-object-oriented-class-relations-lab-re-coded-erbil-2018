@@ -69,4 +69,12 @@ this.id = idD++
 this.name = name
 store.drivers.push(this)
 }
+trips(){
+  
 }
+passengers(){
+  
+}
+}
+
+
