@@ -65,7 +65,7 @@ let idP = 0
 
 class Driver{
 constructor(name, passenger){
-this.idD = idD++
+this.id = idD++
 this.name = name
 if (passenger) {
     this.userId = passenger.id;
@@ -75,33 +75,11 @@ store.drivers.push(this)
 driven(){
 let x = 0
 for (let i =0;i<store.trips.length;i++){
-if (store.trips[i].userId == this.idD){
+if (store.trips[i].userId == this.id){
 x++
 }
 
 }
-return x 
+return x
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
