@@ -95,7 +95,7 @@ class Passenger{
   trips(){
 return  store.trips.filter(v=>v.passengerId == this.id)
   }
-  
+
   drivers(){
     let z = []
     let h = []
@@ -123,7 +123,7 @@ class Trip{
     store.trips.push(this)
   }
   driver(){
-
+return store.drivers.filter(v=> v.id == this.driverId)
   }
 
   passenger(){
