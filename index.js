@@ -123,8 +123,8 @@ class Trip{
     store.trips.push(this)
   }
   driver(){
-return store.drivers.filter(v=> v.id == this.driverId)
-  }
+return store.drivers.filter(v=> this.driverId == v.id)
+}
 
   passenger(){
 return store.passengers.filter(v=> v.id = this.passengerId)
