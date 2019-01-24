@@ -96,6 +96,19 @@ class Passenger{
 return  store.trips.filter(v=>v.passengerId == this.id)
   }
   drivers(){
+    let z = []
+    let h = []
+  for (let i=0; i<store.trips.length;i++){
+  if (this.id == store.trips[i].driverId){
+  z.push(store.trips[i].passengerId)
+  }
+  }
+
+  for (let i=0;i<store.drivers.length;i++){
+  if (store.drivers[i].id == z[i])
+  h.push(store.drivers[i])
+  }
+  return h
 
   }
 }
