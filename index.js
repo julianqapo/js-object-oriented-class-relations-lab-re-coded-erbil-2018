@@ -127,7 +127,7 @@ return store.drivers.filter(v=> this.driverId == v.id)
 }
 
   passenger(){
-return store.passengers.filter(v=> v.id = this.passengerId)
+return store.passengers.filter(v=> v.id == this.passengerId)
 
   }
 }
