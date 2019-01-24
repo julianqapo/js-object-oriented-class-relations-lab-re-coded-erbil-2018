@@ -69,21 +69,19 @@ trips(){
 return  store.trips.filter(v=>v.driverId == this.id)
 }
 passengers(){
-let me =[]
-let mz = []
-for (let i=0; i<store.trips.length;i++){
-if (this.id == store.trips[i].driverId){
-x.push(store.trips[i].passengerId)
-}
-}
-
-for (let i=0; i<store.trips.length; i++){
-if(store.passengers[i].id == me[i]){
-mz.push(store.passengers[i])
-}
-}
-return mz
-}
+  let me =[]
+  
+  for (let i=0; i<store.trips.length;i++){
+  if (this.id == store.trips[i].driverId){
+  me.push(store.trips[i].passengerId)
+  }
+  }
+  
+  let k = store.passengers.filter(function(v){
+  return v.id == me[v]
+  })
+  return k
+  }
 }
 
 
