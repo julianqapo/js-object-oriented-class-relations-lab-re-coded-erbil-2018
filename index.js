@@ -83,7 +83,7 @@ h.push(store.passengers[i])
 }
 return h
 
-}
+}}
 
 
 class Passenger{
