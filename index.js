@@ -142,5 +142,16 @@ passengerId(){
   return z
 }
 
-  
+
+driverId(){
+  let z = []
+  for (let i=0;i<store.drivers.length;i++){
+    if(this.driverId == store.drivers[i].id){
+      z.push(store.drivers[i].id)
+    }
+  }
+  return z
+}
+
+
 }
