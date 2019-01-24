@@ -93,7 +93,7 @@ class Passenger{
     store.passengers.push(this)
   }
   trips(){
-
+return  store.trips.filter(v=>v.passengerId == this.id)
   }
   drivers(){
 
