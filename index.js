@@ -122,7 +122,7 @@ class Trip{
     this.passengerId = pass.id
     store.trips.push(this)
   }
-  
+
   driver(){
 return store.drivers.filter(v=> this.driverId == v.id)
 }
@@ -131,4 +131,16 @@ return store.drivers.filter(v=> this.driverId == v.id)
 return store.passengers.filter(v=> v.id == this.passengerId)
 
   }
+
+passengerId(){
+  let z = []
+  for (let i=0;i<store.passengers.length;i++){
+    if(this.passengerId == store.passengers[i].id){
+      z.push(store.passengers[i].id)
+    }
+  }
+  return z
+}
+
+  
 }
