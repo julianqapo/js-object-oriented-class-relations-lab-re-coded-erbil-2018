@@ -122,6 +122,7 @@ class Trip{
     this.passengerId = pass.id
     store.trips.push(this)
   }
+  
   driver(){
 return store.drivers.filter(v=> this.driverId == v.id)
 }
