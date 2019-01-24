@@ -126,6 +126,6 @@ class Trip{
   }
 
   passenger(){
-
+return store.passengers.filter(v=> v.id = this.id)
   }
 }
